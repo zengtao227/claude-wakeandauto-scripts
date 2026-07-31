@@ -1,0 +1,10 @@
+# Local config with real credentials — never commit these
+*.env
+.env.*
+config.local.sh
+
+# Logs
+*.log
+
+# macOS
+.DS_Store

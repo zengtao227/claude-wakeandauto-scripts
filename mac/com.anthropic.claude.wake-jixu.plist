@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.anthropic.claude.wake-jixu</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>YOUR_HOME/.claude/scripts/wake_claude_jixu.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>5</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>YOUR_HOME/.claude/logs/wake-claude-jixu.cron.log</string>
+    <key>StandardErrorPath</key>
+    <string>YOUR_HOME/.claude/logs/wake-claude-jixu.cron.log</string>
+    <key>WorkingDirectory</key>
+    <string>YOUR_HOME</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>YOUR_HOME</string>
+        <key>PATH</key>
+        <string>YOUR_HOME/.local/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+</dict>
+</plist>
